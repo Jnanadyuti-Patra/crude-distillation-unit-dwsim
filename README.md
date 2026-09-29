@@ -1,7 +1,7 @@
 # Crude Distillation Unit Simulation in DWSIM (Upper Zakum vs WTI Light)
 
 A 6 MMTPA (750 t/h) atmospheric crude unit modelled in DWSIM 9.0.5, driven from Python,
-using public ExxonMobil assays for a medium sour Middle East crude (Upper Zakum, Abu Dhabi,
+using public crude assays for a medium sour Middle East crude (Upper Zakum, Abu Dhabi,
 33.4° API, 2.09 wt% S) and a light sweet crude (WTI Light, 47.4° API, 0.07 wt% S).
 
 ## 1. Crude characterization (`scripts/assay.py`, `characterize.py`, `model.py`)
@@ -105,11 +105,10 @@ in `%LOCALAPPDATA%\DWSIM`, or set `DWSIM_PATH`).
 ```
 pip install -r requirements.txt
 cd scripts
-python fetch_assays.py     # downloads the two ExxonMobil assays into data/
+python fetch_assays.py     # downloads the two public crude assays into data/
 python run_study.py        # base cases + studies -> results/
 python make_figures.py     # -> figures/
 ```
 
-The assays (UPZAK26B, WTI Light) are ExxonMobil's, courtesy EMTEC, and are not redistributed
-here; `fetch_assays.py` downloads them from ExxonMobil's public
-[assay library](https://corporate.exxonmobil.com/what-we-do/energy-supply/crude-trading/assays-available-for-download).
+The assay workbooks are third-party public data and are not redistributed here;
+`fetch_assays.py` downloads them from the publisher's public assay library.
