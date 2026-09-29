@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# ExxonMobil assays are not redistributed; run scripts/fetch_assays.py
+data/*.xlsx
