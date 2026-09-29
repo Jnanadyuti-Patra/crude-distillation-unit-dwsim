@@ -1,4 +1,4 @@
-"""Read an ExxonMobil crude assay workbook (Summary + Yield Graph sheets)."""
+"""Read a public crude assay workbook (Summary + Yield Graph sheets)."""
 import openpyxl
 
 LIGHT_ENDS = {  # assay label -> DWSIM compound name
